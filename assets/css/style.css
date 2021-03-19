@@ -86,7 +86,7 @@ form input {
     padding: 0 20px;
     background-color: var(--input-box-color);
 }
-form input:focus {
+form input :focus {
     border: 0.03em solid #E88358;
     box-shadow: 0 0 0.1em #E88358;
 }
