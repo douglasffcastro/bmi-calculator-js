@@ -93,9 +93,7 @@ function setBmi (msg, isValid) {
 
   if (isValid) {
     h4.innerHTML = 'Your BMI'
-
     titleBox.appendChild(h4)
-
     p.classList.add('result-paragraph')
   } else {
     p.classList.add('bad')
