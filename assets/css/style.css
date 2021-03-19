@@ -3,49 +3,36 @@
     --primary-color: #EBEBD3;
     --secondary-color: #F0E08D;
     --secondary-color-darker: #F5D547;
-    --secondary-color-darker-2: #d8bb3b;
-    --input-box-color: #EEE6B0;
-    --shadow-color: #E88358;
-    --text-color: #3C3C3B;
 }
-
 * {
     box-sizing: border-box;
     outline: 0;
     height: 100%;
 }
-
 html {
     overflow: hidden;
 }
-
 body {
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+    color: #3C3C3B;
     font-family: 'Fira Code', sans-serif;
     line-height: 1.5em;
 }
-
 .flex-box {
     display: flex;
 }
-
 .container-box {
     background-color: var(--primary-color);
   }
-
 .container {
-    width: 80%;
     height: 80%;
     margin: 50px auto;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-radius: 0.8em;
     background-color: var(--secondary-color);
 }
-
 .text-box {
     grid-column: 1 / 4;
     grid-row: 1 / 1;
@@ -54,65 +41,56 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / 2;
 }
-
 .box-result {
     grid-column: 2 / 4;
     grid-row: 2 / 2;
-    width: 80%;
     margin: auto;
-    border-radius: 0.8em;
-    background-color: var(--input-box-color);
+    background-color: #EEE6B0;
 }
-
 .box-result h4 {
     text-align:center;
 }
-
 .result {
     margin: 20px 20px;
 }
-
+.container, .box-result {
+    width: 80%;
+    border-radius: 0.8em;
+}
 .result-paragraph {
     width: 93%;
     text-align: justify;
     text-indent: 2.5em;
 }
-
 .bad {
     width: 93%;
     text-align: center;
     background-color: #e77363;
 }
-
 .container h1, 
 .container p,
 .form div,
 .title-box {
     height: auto;
 }
-
 form input,
 form label,
 form button {
     display: block;
     border: none;
+    border-radius: 0.4em;
 }
-
 form input {
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
-    border-radius: 0.4em;
     background-color: var(--input-box-color);
 }
-
 form input:focus {
-    border: 0.03em solid var(--shadow-color);
-    box-shadow: 0 0 0.1em var(--shadow-color);
+    border: 0.03em solid #E88358;
+    box-shadow: 0 0 0.1em #E88358;
 }
-
 form button {
-    border-radius: 0.4em;
     margin: 20px auto auto;
     background-color: var(--secondary-color-darker);
     font-size: 1em;
@@ -121,8 +99,7 @@ form button {
     cursor: pointer;
     text-transform: uppercase;
 }
-
 form button:active {
-    background-color: var(--secondary-color-darker-2);
+    background-color: #d8bb3b;
     transition: 100ms;
 }
