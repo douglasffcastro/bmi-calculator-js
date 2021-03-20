@@ -1,2 +1,2 @@
-## Adult BMI Calculator
-BMI Calculator using JavaScript.
+## BMI Calculator
+Adult BMI Calculator using JavaScript.
