@@ -36,17 +36,17 @@ form.addEventListener('submit', function (e) {
 
 function getBmiCategory (bmi) {
   const category = [
-    'Underweight. Being underweight could be a sign you\'re not eating enough or you may be ill. If you\'re underweight, a GP can help.',
+    'Underweight. Being underweight could be a sign you\'re not eating enough or you may be ill. If you\'re underweight, a general practitioner can help.',
 
     'Healthy weight. Keep up the good work!',
 
     'Overweight. The best way to lose weight if you\'re overweight is through a combination of diet and exercise.',
 
-    'Moderately obese (Obese Class I). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a GP for help and advice.',
+    'Moderately obese (Obese Class I). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a general practitioner for help and advice.',
 
-    'Severely obese (Obese Class II). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a GP for help and advice.',
+    'Severely obese (Obese Class II). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a general practitioner for help and advice.',
 
-    'Very severely obese (Obese Class III). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a GP for help and advice.'
+    'Very severely obese (Obese Class III). The best way to lose weight if you\'re obese is through a combination of diet and exercise, and, in some cases, medicines. See a general practitioner for help and advice.'
   ]
 
   if (bmi >= 40) return category[5]

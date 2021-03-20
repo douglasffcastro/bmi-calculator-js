@@ -84,7 +84,7 @@ form input {
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
-    background-color: var(--input-box-color);
+    background-color: #EEE6B0;
 }
 form input :focus {
     border: 0.03em solid #E88358;
